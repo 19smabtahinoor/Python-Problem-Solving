@@ -1,6 +1,5 @@
-intNumber = int(input('Write a first Number : '))
-floatNumber = float(input('Write a second Number : '))
+num1 = 10 
+num2 = 2
 
-totalInput = intNumber * floatNumber
-print("Your result is ",totalInput)
-
+result = num1**num2
+print(result)
