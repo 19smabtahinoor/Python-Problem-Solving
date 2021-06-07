@@ -1,12 +1,9 @@
-# Problem : Fibonacci Series
+def get_sums(nums):
+  sum = 0
+  for num in nums:
+    sum = num + sum
+  return sum
 
-def fibonacci(num):
-  fibo = [0,1]
-  i = 2 
-  while i <= num:
-    next_fibo = fibo[i-1] + fibo[i-2]
-    fibo.append(next_fibo)
-    i = i + 1
-  return fibo
-print(fibonacci(10))
-
+nums = [1,2,3,4,5]
+total = get_sums(nums)
+print('Total number is',total)
