@@ -1,11 +1,12 @@
-# Problem : Remove Duplicate
+# Problem : Fibonacci Series
 
-def remove_duplicate(items):
-  unique=[]
-  for item in items:
-    if item not in unique:
-      unique.append(item)
-  return unique
+def fibonacci(num):
+  fibo = [0,1]
+  i = 2 
+  while i <= num:
+    next_fibo = fibo[i-1] + fibo[i-2]
+    fibo.append(next_fibo)
+    i = i + 1
+  return fibo
+print(fibonacci(10))
 
-numbers = [1,2,2,66,3,35,35436,46,67]
-print(remove_duplicate(numbers))
