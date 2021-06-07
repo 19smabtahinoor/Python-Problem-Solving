@@ -1,11 +1,11 @@
-# Problem : Vowels Count
+# Problem : Remove Duplicate
 
-def count_variables(sentence):
-  vowels=['a','e','i','o','u','A','E','I','O','U']
-  count = 0
-  for char in sentence:
-    if char in vowels:
-      count = count +1
-  return count
-  
-print(count_variables(input("Write your name : ")))
+def remove_duplicate(items):
+  unique=[]
+  for item in items:
+    if item not in unique:
+      unique.append(item)
+  return unique
+
+numbers = [1,2,2,66,3,35,35436,46,67]
+print(remove_duplicate(numbers))
