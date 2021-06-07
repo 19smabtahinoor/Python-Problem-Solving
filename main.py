@@ -1,10 +1,10 @@
-# Problem : We take a input of any year.Then we can say it's leapyear or not.
+# Problem : Word Count
 
-year = int(input("Enter a year: "))
+user_Text = input("Write your bio:")
+count = 0
+for char in user_Text:
+  if char == ' ':
+    count = count + 1
 
-if year%4 == 0:
-    is_leapyear = year," is a leap year"
-else:
-    is_leapyear = year," is not a leap year"
-
-print(is_leapyear)
+count = count + 1
+print(count)
